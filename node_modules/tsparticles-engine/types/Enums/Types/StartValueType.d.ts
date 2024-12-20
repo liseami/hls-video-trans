@@ -1,0 +1,5 @@
+export declare const enum StartValueType {
+    max = "max",
+    min = "min",
+    random = "random"
+}

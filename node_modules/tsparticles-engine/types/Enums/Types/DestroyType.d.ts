@@ -1,0 +1,5 @@
+export declare const enum DestroyType {
+    none = "none",
+    max = "max",
+    min = "min"
+}

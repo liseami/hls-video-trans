@@ -1,0 +1,36 @@
+import type { IBackground } from "./Background/IBackground.js";
+import type { IBackgroundMask } from "./BackgroundMask/IBackgroundMask.js";
+import type { IFullScreen } from "./FullScreen/IFullScreen.js";
+import type { IInteractivity } from "./Interactivity/IInteractivity.js";
+import type { IManualParticle } from "./IManualParticle.js";
+import type { IParticlesOptions } from "./Particles/IParticlesOptions.js";
+import type { IResponsive } from "./IResponsive.js";
+import type { ITheme } from "./Theme/ITheme.js";
+import type { RangeValue } from "../../Types/RangeValue.js";
+import type { RecursivePartial } from "../../Types/RecursivePartial.js";
+import type { SingleOrMultiple } from "../../Types/SingleOrMultiple.js";
+export interface IOptions {
+    [name: string]: unknown;
+    autoPlay: boolean;
+    background: IBackground;
+    backgroundMask: IBackgroundMask;
+    clear: boolean;
+    delay: RangeValue;
+    detectRetina: boolean;
+    duration: RangeValue;
+    fpsLimit: number;
+    fullScreen: RecursivePartial<IFullScreen> | boolean;
+    interactivity: IInteractivity;
+    key?: string;
+    manualParticles: IManualParticle[];
+    name?: string;
+    particles: IParticlesOptions;
+    pauseOnBlur: boolean;
+    pauseOnOutsideViewport: boolean;
+    preset?: SingleOrMultiple<string>;
+    responsive: IResponsive[];
+    smooth: boolean;
+    style: RecursivePartial<CSSStyleDeclaration>;
+    themes: ITheme[];
+    zLayers: number;
+}

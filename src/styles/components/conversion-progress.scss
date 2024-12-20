@@ -1,0 +1,139 @@
+.converting-section {
+  padding: 2rem;
+}
+
+.progress-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  
+  circle {
+    transition: stroke-dashoffset 0.3s ease;
+  }
+
+  .progress-ring-circle-bg {
+    stroke: rgba(255, 255, 255, 0.1);
+  }
+
+  .progress-ring-circle {
+    stroke: #fff;
+  }
+
+  text {
+    transform: rotate(90deg);
+    text-anchor: middle;
+    fill: #fff;
+  }
+
+  .progress-text {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .progress-stage {
+    font-size: 14px;
+    fill: #888;
+  }
+}
+
+.stage-info {
+  width: 100%;
+  max-width: 500px;
+}
+
+.stage-progress {
+  margin-bottom: 1rem;
+
+  .stage-label {
+    display: block;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.modern-progress {
+  :deep(.el-progress-bar__outer) {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  :deep(.el-progress-bar__inner) {
+    background: linear-gradient(90deg, #fff, #888);
+  }
+}
+
+.log-section {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  h4 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #888;
+  }
+}
+
+.log-content {
+  height: 200px;
+  overflow-y: auto;
+  padding: 1rem;
+  font-family: 'SF Mono', Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.log-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.3s ease forwards;
+
+  &.new-log {
+    animation: highlight 2s ease;
+  }
+}
+
+.log-time {
+  color: #666;
+  white-space: nowrap;
+}
+
+.log-message {
+  color: #888;
+  word-break: break-word;
+}
+
+.log-success .log-message { color: #67c23a; }
+.log-warning .log-message { color: #e6a23c; }
+.log-error .log-message { color: #f56c6c; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes highlight {
+  0% { background: rgba(255, 255, 255, 0.1); }
+  100% { background: transparent; }
+} 

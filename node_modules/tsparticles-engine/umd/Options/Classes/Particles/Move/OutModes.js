@@ -1,0 +1,31 @@
+(function (factory) {
+    if (typeof module === "object" && typeof module.exports === "object") {
+        var v = factory(require, exports);
+        if (v !== undefined) module.exports = v;
+    }
+    else if (typeof define === "function" && define.amd) {
+        define(["require", "exports"], factory);
+    }
+})(function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.OutModes = void 0;
+    class OutModes {
+        constructor() {
+            this.default = "out";
+        }
+        load(data) {
+            if (!data) {
+                return;
+            }
+            if (data.default !== undefined) {
+                this.default = data.default;
+            }
+            this.bottom = data.bottom ?? data.default;
+            this.left = data.left ?? data.default;
+            this.right = data.right ?? data.default;
+            this.top = data.top ?? data.default;
+        }
+    }
+    exports.OutModes = OutModes;
+});

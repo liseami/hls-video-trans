@@ -1,0 +1,32 @@
+.complete-section {
+  text-align: center;
+  padding: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    background: linear-gradient(135deg, #67c23a 0%, #409EFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .output-path {
+    color: #888;
+    margin: 1rem 0 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+} 

@@ -1,0 +1,16 @@
+export declare const generatedAttribute = "generated";
+export declare const mouseDownEvent = "pointerdown";
+export declare const mouseUpEvent = "pointerup";
+export declare const mouseLeaveEvent = "pointerleave";
+export declare const mouseOutEvent = "pointerout";
+export declare const mouseMoveEvent = "pointermove";
+export declare const touchStartEvent = "touchstart";
+export declare const touchEndEvent = "touchend";
+export declare const touchMoveEvent = "touchmove";
+export declare const touchCancelEvent = "touchcancel";
+export declare const resizeEvent = "resize";
+export declare const visibilityChangeEvent = "visibilitychange";
+export declare const errorPrefix = "tsParticles - Error";
+export declare const percentDenominator = 100;
+export declare const halfRandom = 0.5;
+export declare const millisecondsToSeconds = 1000;

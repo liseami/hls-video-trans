@@ -1,0 +1,54 @@
+import { Background } from "./Background/Background.js";
+import { BackgroundMask } from "./BackgroundMask/BackgroundMask.js";
+import type { Container } from "../../Core/Container.js";
+import type { Engine } from "../../Core/Engine.js";
+import { FullScreen } from "./FullScreen/FullScreen.js";
+import type { IOptionLoader } from "../Interfaces/IOptionLoader.js";
+import type { IOptions } from "../Interfaces/IOptions.js";
+import type { ISourceOptions } from "../../Types/ISourceOptions.js";
+import { Interactivity } from "./Interactivity/Interactivity.js";
+import { ManualParticle } from "./ManualParticle.js";
+import type { RangeValue } from "../../Types/RangeValue.js";
+import type { RecursivePartial } from "../../Types/RecursivePartial.js";
+import { Responsive } from "./Responsive.js";
+import type { SingleOrMultiple } from "../../Types/SingleOrMultiple.js";
+import { Theme } from "./Theme/Theme.js";
+interface DefaultThemes {
+    dark?: string;
+    light?: string;
+}
+export declare class Options implements IOptions, IOptionLoader<IOptions> {
+    [name: string]: unknown;
+    autoPlay: boolean;
+    readonly background: Background;
+    readonly backgroundMask: BackgroundMask;
+    clear: boolean;
+    defaultThemes: DefaultThemes;
+    delay: RangeValue;
+    detectRetina: boolean;
+    duration: RangeValue;
+    fpsLimit: number;
+    readonly fullScreen: FullScreen;
+    readonly interactivity: Interactivity;
+    key?: string;
+    manualParticles: ManualParticle[];
+    name?: string;
+    readonly particles: import("./Particles/ParticlesOptions.js").ParticlesOptions;
+    pauseOnBlur: boolean;
+    pauseOnOutsideViewport: boolean;
+    preset?: SingleOrMultiple<string>;
+    responsive: Responsive[];
+    smooth: boolean;
+    style: RecursivePartial<CSSStyleDeclaration>;
+    readonly themes: Theme[];
+    zLayers: number;
+    private readonly _container;
+    private readonly _engine;
+    constructor(engine: Engine, container: Container);
+    load(data?: ISourceOptions): void;
+    setResponsive(width: number, pxRatio: number, defaultOptions: IOptions): number | undefined;
+    setTheme(name?: string): void;
+    private readonly _findDefaultTheme;
+    private readonly _importPreset;
+}
+export {};

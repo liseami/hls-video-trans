@@ -1,0 +1,30 @@
+import type { ICharacterShape } from "../../../Interfaces/Particles/Shape/ICharacterShape";
+import type { IImageShape } from "../../../Interfaces/Particles/Shape/IImageShape";
+import type { IOptionLoader } from "../../../Interfaces/IOptionLoader";
+import type { IPolygonShape } from "../../../Interfaces/Particles/Shape/IPolygonShape";
+import type { IShape } from "../../../Interfaces/Particles/Shape/IShape";
+import type { RecursivePartial } from "../../../../Types/RecursivePartial";
+import type { ShapeData } from "../../../../Types/ShapeData";
+import type { SingleOrMultiple } from "../../../../Types/SingleOrMultiple";
+import type { Stroke } from "../Stroke";
+export declare class Shape implements IShape, IOptionLoader<IShape> {
+    close: boolean;
+    fill: boolean;
+    options: ShapeData;
+    type: SingleOrMultiple<string>;
+    constructor();
+    get character(): SingleOrMultiple<ICharacterShape>;
+    set character(value: SingleOrMultiple<ICharacterShape>);
+    get custom(): ShapeData;
+    set custom(value: ShapeData);
+    get image(): SingleOrMultiple<IImageShape>;
+    set image(value: SingleOrMultiple<IImageShape>);
+    get images(): SingleOrMultiple<IImageShape>;
+    set images(value: SingleOrMultiple<IImageShape>);
+    get polygon(): SingleOrMultiple<IPolygonShape>;
+    set polygon(value: SingleOrMultiple<IPolygonShape>);
+    get stroke(): SingleOrMultiple<Stroke>;
+    set stroke(_value: SingleOrMultiple<Stroke>);
+    load(data?: RecursivePartial<IShape>): void;
+    private readonly loadShape;
+}

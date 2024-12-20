@@ -1,0 +1,128 @@
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+(function (factory) {
+    if (typeof module === "object" && typeof module.exports === "object") {
+        var v = factory(require, exports);
+        if (v !== undefined) module.exports = v;
+    }
+    else if (typeof define === "function" && define.amd) {
+        define(["require", "exports", "./Core/Interfaces/Colors", "./Core/Interfaces/IBounds", "./Core/Interfaces/IBubbleParticleData", "./Core/Interfaces/ICircleBouncer", "./Core/Interfaces/IColorManager", "./Core/Interfaces/IContainerInteractivity", "./Core/Interfaces/IContainerPlugin", "./Core/Interfaces/ICoordinates", "./Core/Interfaces/IDelta", "./Core/Interfaces/IDimension", "./Core/Interfaces/IDistance", "./Core/Interfaces/IDrawParticleParams", "./Core/Interfaces/IExternalInteractor", "./Core/Interfaces/IInteractor", "./Core/Interfaces/ILoadParams", "./Core/Interfaces/IMouseData", "./Core/Interfaces/IMovePathGenerator", "./Core/Interfaces/IParticle", "./Core/Interfaces/IParticleColorStyle", "./Core/Interfaces/IParticleHslAnimation", "./Core/Interfaces/IParticleLife", "./Core/Interfaces/IParticleMover", "./Core/Interfaces/IParticleRetinaProps", "./Core/Interfaces/IParticleRoll", "./Core/Interfaces/IParticleTransformValues", "./Core/Interfaces/IParticleUpdater", "./Core/Interfaces/IParticleValueAnimation", "./Core/Interfaces/IParticlesInteractor", "./Core/Interfaces/IPlugin", "./Core/Interfaces/IPositionFromSizeParams", "./Core/Interfaces/IRangeValue", "./Core/Interfaces/IRectSideResult", "./Core/Interfaces/IShapeDrawer", "./Core/Interfaces/IShapeValues", "./Core/Interfaces/ISlowParticleData", "./Core/Interfaces/ITrailFillData", "./Options/Interfaces/Background/IBackground", "./Options/Interfaces/BackgroundMask/IBackgroundMask", "./Options/Interfaces/BackgroundMask/IBackgroundMaskCover", "./Options/Interfaces/FullScreen/IFullScreen", "./Options/Interfaces/IAnimatable", "./Options/Interfaces/IAnimatableColor", "./Options/Interfaces/IAnimation", "./Options/Interfaces/IColorAnimation", "./Options/Interfaces/IHslAnimation", "./Options/Interfaces/IManualParticle", "./Options/Interfaces/IOptionLoader", "./Options/Interfaces/IOptions", "./Options/Interfaces/IOptionsColor", "./Options/Interfaces/IResponsive", "./Options/Interfaces/IValueWithRandom", "./Options/Interfaces/Interactivity/Events/IClickEvent", "./Options/Interfaces/Interactivity/Events/IDivEvent", "./Options/Interfaces/Interactivity/Events/IEvents", "./Options/Interfaces/Interactivity/Events/IHoverEvent", "./Options/Interfaces/Interactivity/Events/IParallax", "./Options/Interfaces/Interactivity/Events/IResizeEvent", "./Options/Interfaces/Interactivity/Modes/IModeDiv", "./Options/Interfaces/Interactivity/Modes/IModes", "./Options/Interfaces/Interactivity/IInteractivity", "./Options/Interfaces/Particles/Bounce/IParticlesBounce", "./Options/Interfaces/Particles/Collisions/ICollisions", "./Options/Interfaces/Particles/Collisions/ICollisionsAbsorb", "./Options/Interfaces/Particles/Collisions/ICollisionsOverlap", "./Options/Interfaces/Particles/IParticlesOptions", "./Options/Interfaces/Particles/IShadow", "./Options/Interfaces/Particles/IStroke", "./Options/Interfaces/Particles/Move/IMoveAttract", "./Options/Interfaces/Particles/Move/IMove", "./Options/Interfaces/Particles/Move/IMoveAngle", "./Options/Interfaces/Particles/Move/IMoveCenter", "./Options/Interfaces/Particles/Move/IMoveGravity", "./Options/Interfaces/Particles/Move/Path/IMovePath", "./Options/Interfaces/Particles/Move/IOutModes", "./Options/Interfaces/Particles/Move/ISpin", "./Options/Interfaces/Particles/Move/IMoveTrail", "./Options/Interfaces/Particles/Number/IParticlesDensity", "./Options/Interfaces/Particles/Number/IParticlesNumber", "./Options/Interfaces/Particles/Opacity/IOpacity", "./Options/Interfaces/Particles/Opacity/IOpacityAnimation", "./Options/Interfaces/Particles/Shape/ICharacterShape", "./Options/Interfaces/Particles/Shape/IImageShape", "./Options/Interfaces/Particles/Shape/IPolygonShape", "./Options/Interfaces/Particles/Shape/IShape", "./Options/Interfaces/Particles/Shape/IShapeValues", "./Options/Interfaces/Particles/Shape/IStarShape", "./Options/Interfaces/Particles/Size/ISize", "./Options/Interfaces/Particles/Size/ISizeAnimation", "./Options/Interfaces/Particles/ZIndex/IZIndex", "./Options/Interfaces/Theme/ITheme", "./Options/Interfaces/Theme/IThemeDefault", "./Types/CustomEventArgs", "./Types/CustomEventListener", "./Types/ExportResult", "./Types/ISourceOptions", "./Types/ParticlesGroups", "./Types/PathOptions", "./Types/RangeValue", "./Types/RecursivePartial", "./Types/ShapeData", "./Types/ShapeDrawerFunctions", "./Types/SingleOrMultiple"], factory);
+    }
+})(function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    __exportStar(require("./Core/Interfaces/Colors"), exports);
+    __exportStar(require("./Core/Interfaces/IBounds"), exports);
+    __exportStar(require("./Core/Interfaces/IBubbleParticleData"), exports);
+    __exportStar(require("./Core/Interfaces/ICircleBouncer"), exports);
+    __exportStar(require("./Core/Interfaces/IColorManager"), exports);
+    __exportStar(require("./Core/Interfaces/IContainerInteractivity"), exports);
+    __exportStar(require("./Core/Interfaces/IContainerPlugin"), exports);
+    __exportStar(require("./Core/Interfaces/ICoordinates"), exports);
+    __exportStar(require("./Core/Interfaces/IDelta"), exports);
+    __exportStar(require("./Core/Interfaces/IDimension"), exports);
+    __exportStar(require("./Core/Interfaces/IDistance"), exports);
+    __exportStar(require("./Core/Interfaces/IDrawParticleParams"), exports);
+    __exportStar(require("./Core/Interfaces/IExternalInteractor"), exports);
+    __exportStar(require("./Core/Interfaces/IInteractor"), exports);
+    __exportStar(require("./Core/Interfaces/ILoadParams"), exports);
+    __exportStar(require("./Core/Interfaces/IMouseData"), exports);
+    __exportStar(require("./Core/Interfaces/IMovePathGenerator"), exports);
+    __exportStar(require("./Core/Interfaces/IParticle"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleColorStyle"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleHslAnimation"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleLife"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleMover"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleRetinaProps"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleRoll"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleTransformValues"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleUpdater"), exports);
+    __exportStar(require("./Core/Interfaces/IParticleValueAnimation"), exports);
+    __exportStar(require("./Core/Interfaces/IParticlesInteractor"), exports);
+    __exportStar(require("./Core/Interfaces/IPlugin"), exports);
+    __exportStar(require("./Core/Interfaces/IPositionFromSizeParams"), exports);
+    __exportStar(require("./Core/Interfaces/IRangeValue"), exports);
+    __exportStar(require("./Core/Interfaces/IRectSideResult"), exports);
+    __exportStar(require("./Core/Interfaces/IShapeDrawer"), exports);
+    __exportStar(require("./Core/Interfaces/IShapeValues"), exports);
+    __exportStar(require("./Core/Interfaces/ISlowParticleData"), exports);
+    __exportStar(require("./Core/Interfaces/ITrailFillData"), exports);
+    __exportStar(require("./Options/Interfaces/Background/IBackground"), exports);
+    __exportStar(require("./Options/Interfaces/BackgroundMask/IBackgroundMask"), exports);
+    __exportStar(require("./Options/Interfaces/BackgroundMask/IBackgroundMaskCover"), exports);
+    __exportStar(require("./Options/Interfaces/FullScreen/IFullScreen"), exports);
+    __exportStar(require("./Options/Interfaces/IAnimatable"), exports);
+    __exportStar(require("./Options/Interfaces/IAnimatableColor"), exports);
+    __exportStar(require("./Options/Interfaces/IAnimation"), exports);
+    __exportStar(require("./Options/Interfaces/IColorAnimation"), exports);
+    __exportStar(require("./Options/Interfaces/IHslAnimation"), exports);
+    __exportStar(require("./Options/Interfaces/IManualParticle"), exports);
+    __exportStar(require("./Options/Interfaces/IOptionLoader"), exports);
+    __exportStar(require("./Options/Interfaces/IOptions"), exports);
+    __exportStar(require("./Options/Interfaces/IOptionsColor"), exports);
+    __exportStar(require("./Options/Interfaces/IResponsive"), exports);
+    __exportStar(require("./Options/Interfaces/IValueWithRandom"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Events/IClickEvent"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Events/IDivEvent"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Events/IEvents"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Events/IHoverEvent"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Events/IParallax"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Events/IResizeEvent"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Modes/IModeDiv"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/Modes/IModes"), exports);
+    __exportStar(require("./Options/Interfaces/Interactivity/IInteractivity"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Bounce/IParticlesBounce"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Collisions/ICollisions"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Collisions/ICollisionsAbsorb"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Collisions/ICollisionsOverlap"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/IParticlesOptions"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/IShadow"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/IStroke"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/IMoveAttract"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/IMove"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/IMoveAngle"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/IMoveCenter"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/IMoveGravity"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/Path/IMovePath"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/IOutModes"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/ISpin"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Move/IMoveTrail"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Number/IParticlesDensity"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Number/IParticlesNumber"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Opacity/IOpacity"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Opacity/IOpacityAnimation"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Shape/ICharacterShape"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Shape/IImageShape"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Shape/IPolygonShape"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Shape/IShape"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Shape/IShapeValues"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Shape/IStarShape"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Size/ISize"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/Size/ISizeAnimation"), exports);
+    __exportStar(require("./Options/Interfaces/Particles/ZIndex/IZIndex"), exports);
+    __exportStar(require("./Options/Interfaces/Theme/ITheme"), exports);
+    __exportStar(require("./Options/Interfaces/Theme/IThemeDefault"), exports);
+    __exportStar(require("./Types/CustomEventArgs"), exports);
+    __exportStar(require("./Types/CustomEventListener"), exports);
+    __exportStar(require("./Types/ExportResult"), exports);
+    __exportStar(require("./Types/ISourceOptions"), exports);
+    __exportStar(require("./Types/ParticlesGroups"), exports);
+    __exportStar(require("./Types/PathOptions"), exports);
+    __exportStar(require("./Types/RangeValue"), exports);
+    __exportStar(require("./Types/RecursivePartial"), exports);
+    __exportStar(require("./Types/ShapeData"), exports);
+    __exportStar(require("./Types/ShapeDrawerFunctions"), exports);
+    __exportStar(require("./Types/SingleOrMultiple"), exports);
+});

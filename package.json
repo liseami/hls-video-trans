@@ -1,0 +1,26 @@
+{
+    "name": "video-converter-ui",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@vueuse/motion": "^2.0.0",
+        "element-plus": "^2.3.8",
+        "express": "^4.18.2",
+        "multer": "^1.4.5-lts.1",
+        "sass": "^1.64.1",
+        "tsparticles": "^3.7.1",
+        "vue": "^3.3.4",
+        "vue3-lottie": "^2.7.0",
+        "vue3-particles": "^2.12.0",
+        "ws": "^8.13.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.2.3",
+        "vite": "^4.4.7"
+    }
+}
