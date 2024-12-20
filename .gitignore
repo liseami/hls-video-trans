@@ -10,6 +10,12 @@ coverage
 dist
 build
 
+# Output directories
+output/
+output_*
+*.m3u8
+*.ts
+
 # Misc
 .DS_Store
 .env.local
