@@ -54,16 +54,7 @@ yarn install
 
 3. 启动开发服务器
 ```bash
-npm run dev
-# 或
-yarn dev
-```
-
-4. 构建生产版本
-```bash
-npm run build
-# 或
-yarn build
+./start.sh 
 ```
 
 ## 💻 使用方法
