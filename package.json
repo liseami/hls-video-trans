@@ -16,7 +16,6 @@
         "tsparticles": "^3.7.1",
         "vue": "^3.3.4",
         "vue3-lottie": "^2.7.0",
-        "vue3-particles": "^2.12.0",
         "ws": "^8.13.0"
     },
     "devDependencies": {

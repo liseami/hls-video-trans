@@ -1,56 +1,122 @@
-# 视频转换工具
+# HLS视频转换器
 
-这是一个基于网页的视频转换工具，可以将视频转换为HLS格式，支持多种分辨率输出。
+一个优雅的流媒体视频转换工具，支持将普通视频转换为HLS（HTTP Live Streaming）格式。
 
-## 系统要求
+## ✨ 特性
 
-- Node.js 14+
-- ffmpeg
-- Mac OS (M1芯片支持)
+- 🚀 自适应码率切换
+- 🌐 全平台兼容播放
+- 📦 智能分片传输
+- 💡 按需加载资源
+- 🎯 多分辨率支持
+- ⚡️ 实时转码进度
 
-## 安装
+## 🔧 环境要求
 
-1. 确保已安装 ffmpeg：
+### FFmpeg 安装
+
+本工具基于FFmpeg进行视频转码，使用前请确保已安装FFmpeg：
+
+**MacOS**
 ```bash
 brew install ffmpeg
 ```
 
-2. 安装项目依赖：
+**Windows**
+```bash
+scoop install ffmpeg
+```
+
+**Linux**
+```bash
+apt-get install ffmpeg
+```
+
+### Node.js 环境
+
+- Node.js 16+
+- npm 或 yarn
+
+## 🚀 快速开始
+
+1. 克隆项目
+```bash
+git clone [项目地址]
+cd [项目目录]
+```
+
+2. 安装依赖
 ```bash
 npm install
+# 或
+yarn install
 ```
 
-## 运行
-
-执行以下命令启动应用：
-
+3. 启动开发服务器
 ```bash
-chmod +x start.sh
-./start.sh
-```
-
-或者分别启动前端和后端：
-
-```bash
-# 终端1：启动后端服务器
-node server.js
-
-# 终端2：启动前端开发服务器
 npm run dev
+# 或
+yarn dev
 ```
 
-## 使用方法
+4. 构建生产版本
+```bash
+npm run build
+# 或
+yarn build
+```
 
-1. 打开浏览器访问 http://localhost:5173
-2. 将视频文件拖拽到上传区域或点击选择文件
-3. 等待转换完成
-4. 点击"在 Finder 中查看"按钮查看转换后的文件
+## 💻 使用方法
 
-## 功能特点
+1. 打开应用后，选择要转换的视频文件
+2. 上传完成后，系统会自动开始转换
+3. 转换过程中可以实时查看进度
+4. 转换完成后，可以获取生成的HLS文件
 
-- 支持拖拽上传
-- 自动转换为HLS格式
-- 支持多种分辨率输出（720p、1080p、2160p）
-- 转换完成后可直接在Finder中打开文件夹
-- 美观的用户界面
-- 实时转换进度显示 
+## 🔌 在网页中使用生成的HLS视频
+
+### 方式一：使用Web Component（推荐）
+
+```javascript
+// 使用hls-video-element
+import 'hls-video-element';
+
+<hls-video 
+  controls 
+  src="video.m3u8">
+</hls-video>
+```
+
+### 方式二：使用原生JavaScript
+
+```javascript
+// 使用hls.js
+import Hls from 'hls.js';
+
+const hls = new Hls();
+hls.loadSource('video.m3u8');
+hls.attachMedia(video);
+```
+
+## 📝 技术规格
+
+- 支持分辨率：240p 到 4K
+- 视频编码：H.264
+- 音频编码：AAC
+- 切片时长：6秒
+- 输出格式：m3u8 + ts文件
+
+## 🤝 贡献
+
+欢迎提交问题和改进建议！
+
+## 📄 许可证
+
+[MIT License](LICENSE)
+
+## 👨‍💻 作者
+
+赵纯想 - 全栈工程师 / 独立开发者
+
+- 个人主页：[https://me.revome.cn](https://me.revome.cn)
+- 座右铭："创造美好的东西，供人使用" 
