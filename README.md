@@ -45,14 +45,7 @@ git clone [项目地址]
 cd [项目目录]
 ```
 
-2. 安装依赖
-```bash
-npm install
-# 或
-yarn install
-```
-
-3. 启动开发服务器
+2. 运行脚本（可以查看和修改脚本）
 ```bash
 ./start.sh 
 ```
@@ -110,4 +103,4 @@ hls.attachMedia(video);
 赵纯想 - 全栈工程师 / 独立开发者
 
 - 个人主页：[https://me.revome.cn](https://me.revome.cn)
-- 座右铭："创造美好的东西，供人使用" 
+- "创造美好的东西，供人使用" 
